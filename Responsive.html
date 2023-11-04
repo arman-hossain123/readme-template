@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design</title>
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobaile.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      /*  @media screen and (max-width:700px){
+            body{
+                background-color: brown;
+            }
+            h1{
+                color: white;
+            }
+            h2{
+              display: none;
+            }
+        }*/
+        /*--------------------------
+        Responsive navigation menu
+        --------------------------*/
+        .menu{
+            background-color: cadetblue;
+            display: flex;
+            justify-content: flex-end;
+
+        }
+        .menu a{
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+        }
+        .menu a:hover{
+            background-color: blue;
+        }
+        @media screen and (max-width:750px){
+            .menu{
+            flex-direction:column;
+            padding: 10px;
+            }
+            .menu a{
+                background-color: indigo;
+                margin: 10px 0;
+                text-align: center;
+                border-radius: 15px;
+
+                  
+            }m
+            
+        }
+        /*---------------------------
+        Responsive columns design
+        ----------------------------*/
+        *{
+            box-sizing: border-box;
+        }
+        /*.row{
+            display: flex;
+            flex-wrap: wrap;
+        }*/
+
+        .column{
+            float: left;
+            width: 25%;
+            padding: 10px;
+            /*flex:25%;*/
+        }
+        @media screen and (max-width:992px){
+            .column{
+                float: left;
+                width: 50%;
+            }
+            
+        }
+       /* @media screen and (max-width:992px){
+            .column{
+                flex: 50%;
+            }       
+        }*/
+        @media screen and (max-width:600px){
+            .column{
+                
+                width: 100%;
+            }     
+        }
+       /* @media screen and (max-width:600px){
+            .row{
+                flex-direction: column;
+                
+            }     
+        }*/
+        
+       
+      
+    </style>
+</head>
+<body>
+    <h1>Bangladesh</h1>
+    <h2>Responsive web design</h2>
+    <p>BaTo things be soils in childe his. By for sighed been condemned, who yet fathers childe his, lineage at or.ngladesh</p>
+<br><br>
+
+        <!--------------------------
+        Responsive navigation menu
+        -------------------------->
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact Me</a>
+        </div>
+        <br><br>
+
+        <!---------------------------
+        Responsive columns design
+        ---------------------------->
+        <div class="row">
+            <div class="column">
+                <h1>HTML</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur veniam consectetur</p>
+            </div>
+            <div class="column">
+                <h1>CSS</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, quasi!</p>
+            </div>
+            <div class="column">
+                <h1>JS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur veniam consectetur</p>
+            </div>
+            <div class="column">
+                <h1>Bootstrap</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur veniam consectetur</p>
+            </div>
+        </div>
+        
+
+
+       
+
+        
+</body>
+</html>

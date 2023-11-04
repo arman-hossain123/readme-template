@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Element using</title>
+    <style>
+        .main{
+            text-align: center;
+            background-color: red;
+        }
+        h1{
+            width: 200px;
+            margin: 0 auto;
+        }
+        .man{
+            width:80%;
+            height: 400px;
+            text-align: center;
+            margin: 0 auto;
+            background-color: pink;
+           /* display: flex;
+            justify-content: center;
+            align-items: center;*/
+           
+            position: relative;
+           
+        }
+        .desc{
+            background-color: brown;
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Bangladesh</h1>
+    </div>
+    <br>
+    <div class="man">
+    <div class="desc">
+        <h2>Sylhet</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis qui culpa architecto tempore quam vero consectetur consequuntur eaque nobis.</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*-----------------------------------
+        Responsive web design using grid view 
+        --------------------------------------*/
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: blue;
+            color: white;
+            padding: 1% 5%;
+            text-align: center;
+        }
+        .nav-menu{
+              padding: 1% 5%;
+              background-color: #39a4ac;
+        }
+        .nav-menu a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            display: block;
+        }
+        .main{
+            padding: 1% 5%;
+            background-color: turquoise;
+        }
+        .aside{
+            padding: 1% 5%;
+            background-color: blueviolet;
+            text-align: center;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 40px;
+            margin-top: 455px;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        /*-----for Mobaile---*/
+        [class*="col-"]{
+                width: 100%;
+                
+            }
+        
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+        }
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;  
+        }
+        @media screen and (min-width:600px){
+            /*-----for teblet---*/
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+        }
+
+        @media screen and (min-width:768px){
+           /*-----for dextop---*/
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        }  
+
+       
+        
+
+
+      
+        
+        
+        
+
+
+ 
+    </style>
+</head>
+<body>
+    <!-----------------------------------
+        Responsive web design using grid view 
+        --------------------------------------->
+<div class="header">
+    <h1>Arman Shikder</h1>
+    </div>
+    
+    <div class="rows">
+        <div class="nav-menu col-s-3 col-2">
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Contact</a>
+            </div>
+<div class="main co l-s-9 col-7">
+    <h1>I am a web designer</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptatum.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nemo.Rerum Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptatum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cumque a nihil tenetur possimus blanditiis praesentium, corrupti tempora est quos vel cupiditate sapiente quia animi quasi omnis molestiae eos at doloribus hic ullam fuga, voluptate debitis mollitia. Qui delectus et dolore quas sed a id ex soluta blanditiis impedit optio deserunt eius unde sequi, debitis obcaecati. Corrupti, nulla provident dicta culpa labore maiores suscipit deleniti ipsum consequatur in dolor nam.</p>
+    </div>
+
+    <div class="aside col-s-12 col-3">
+        <h2>What I Love</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nemo.Rerum Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptatum.</p>
+
+        <h2>What I Do</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nemo.Rerum Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptatum.</p>
+
+        <h2>What I dont Do?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nemo.Rerum Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptatum.</p>
+
+        </div>
+
+        </div>
+        <div class="footer">
+            &copy; Study with Arman 2022. Developed By Arman Sikder
+
+            </div>
+
+        
+
+</body>
+</html>

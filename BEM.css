@@ -1,0 +1,11 @@
+*{margin:0;padding:0;box-sizing:border-box;list-style:none;outline:0}
+div{padding:1rem;margin:1rem 0;width:50rem}
+.btn{border:none;border-radius:.6rem;padding:.5rem;cursor:pointer}
+.card{background-color:bisque}
+.card--large{width:80rem}
+.card_title{color:brown}
+.card_btn{background-color:#0ff}
+.feedback{background-color:#64625f}
+.feedback--medium{width:60rem}
+.feedback_btn{background-color:violet}
+.feedback_btn--large{width:10rem}

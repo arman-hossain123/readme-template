@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Methodology</title>
+    <link rel="stylesheet" href="bem.css">
+</head>
+<body>
+    <!-------------------------------------
+        BEM : Block,Element,Modifier 
+        1.CSS specificity problem
+        2.CSS class names clashes 
+        3. A common rules needed 
+    Block
+    1. meaningful container/parent
+    2. letters, digits, dashes for naming block
+    3. use dash for more than one word
+
+    Element
+    1. not meaningful like container but related to container
+    2. letters, digits, dashes, undersocre for naming element
+    3. use dash for more than one word
+    4. syntax: block_element
+
+    Modifier 
+    1. modify block/element (apperence, state)
+    2. letters, digits, dashes, undersocre for naming modifier
+    3. use dash for more than one word
+    4. syntax: block/element--midifier
+
+   ---------------------------------------------->
+
+   <div class="container">
+    <!-- card --> 
+                 <!-- Block container-->
+    <div class="card card--large">
+            <!-- Element -->
+        <h2 class="card_title">Card title</h2>
+        <p class="card_text">Card description goes here</p>
+        <button class="btn cad_btn">Learn More</button>
+        <!-- Element -->
+    </div>
+     <!-- Block container-->
+    <!-- feedback -->
+                <!-- Element --> 
+    <div class="feedback feedback--medium">
+        <h2 class="feedback_title">feedback title</h2>
+        <p class="feedback_text">feedback description goes here</p>
+        <button class="btn feedback_btn feedback_btn--large">Learn More</button>
+                <!-- Element -->
+    </div>
+    <!-- Block container-->
+   
+
+    <ul class="list">
+        <li class="list__item">Item1</li>
+        <li class="list__item">
+            Item2
+            <img src="#" alt="#" class="list__img">
+        </li>
+        <li class="list__item">Item3</li>
+    </ul>
+   </div>
+</body>
+</html>
